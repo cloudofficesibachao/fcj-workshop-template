@@ -5,54 +5,42 @@ weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
-### Mục tiêu tuần 6:
+BÁO CÁO TUẦN 6
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+1. Nội dung công việc thực hiện
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* Tiếp tục tìm hiểu và thực hành các chức năng trên hệ thống theo hướng dẫn của mentor.
+* Thực hiện các bài tập được giao liên quan đến giao diện và xử lý chức năng.
+* Kiểm tra, chỉnh sửa các lỗi phát sinh trong quá trình thực hiện.
+* Tham gia các buổi họp nhóm để báo cáo tiến độ công việc và nhận phản hồi.
+* Nghiên cứu thêm tài liệu để nâng cao kiến thức về công nghệ và quy trình phát triển phần mềm.
 
+2. Kết quả đạt được
 
-### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hoàn thành các nhiệm vụ được giao trong tuần đúng thời hạn.
+* Hiểu rõ hơn về quy trình làm việc và cách triển khai một chức năng thực tế.
+* Cải thiện kỹ năng lập trình, xử lý lỗi và làm việc nhóm.
+* Nâng cao khả năng tìm kiếm tài liệu và tự học để giải quyết vấn đề.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+3. Khó khăn gặp phải
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Một số chức năng có yêu cầu xử lý phức tạp nên mất nhiều thời gian nghiên cứu.
+* Gặp lỗi trong quá trình thực hiện khiến tiến độ công việc bị ảnh hưởng.
+* Chưa quen với một số công nghệ và công cụ mới được sử dụng trong dự án.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+4. Cách giải quyết
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Chủ động tìm kiếm tài liệu tham khảo và xem hướng dẫn từ các nguồn học tập.
+* Trao đổi với mentor và các thành viên trong nhóm để được hỗ trợ.
+* Thực hành nhiều lần để hiểu rõ nguyên nhân lỗi và cách khắc phục.
+* Ghi chú lại các kiến thức quan trọng để áp dụng cho những lần thực hiện sau.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+5. Kế hoạch tuần tiếp theo
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn thiện các nhiệm vụ còn tồn đọng và tối ưu các chức năng đã thực hiện.
+* Tiếp tục học tập và tìm hiểu các công nghệ liên quan đến dự án.
+* Tăng cường kiểm tra, đánh giá chất lượng công việc trước khi bàn giao.
+* Chủ động trao đổi với mentor để nhận góp ý và cải thiện kỹ năng chuyên môn.
+* Hoàn thành các đầu việc được giao đúng tiến độ và đảm bảo chất lượng.
