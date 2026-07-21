@@ -5,53 +5,72 @@ weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
-### Week 4 Objectives:
+Week 4 Report
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+Work Completed
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+During week 4, I continued to learn and practice the software development process and technologies used in the workshop project. The tasks completed included:
 
+* Learning more about teamwork and task management using Jira/GitHub.
 
-### Week 4 Achievements:
+* Practicing the labs assigned in the workshop and noting common errors encountered.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Reviewing basic Frontend knowledge, interface handling, and data connection.
 
-* Successfully created and configured an AWS Free Tier account.
+* Participating in group discussions to divide tasks and update progress.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Learning more about project implementation and weekly work reporting procedures.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Reading relevant Agile/Scrum documentation and task management within sprints.
 
-* Used AWS CLI to perform basic operations such as:
+Results Achieved
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Completing the labs and assigned tasks for the week.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Gaining a better understanding of source code management using GitHub.
+
+* Improved teamwork and collaboration skills.
+
+* Learned how to manage tasks and track progress using Jira.
+
+* Further honed skills in finding and resolving errors during coding.
+
+* Gained knowledge of the Agile methodology and how to implement work according to sprints.
+
+Difficulties Encountered
+
+* Several errors arose during practice, causing delays in processing time.
+
+* Unfamiliarity with managing multiple tasks simultaneously sometimes led to delays.
+
+* Reading specialized English documentation was time-consuming.
+
+* Difficulty in coordinating and synchronizing progress among team members.
+
+Solutions
+
+* Actively searched for documentation and consulted online resources to resolve errors.
+
+* Discussed with friends and mentors when encountering difficult problems.
+
+* Breaked down tasks into smaller steps for easier tracking and timely completion.
+
+* Note down common mistakes and how to fix them to avoid repeating them.
+
+* Manage your time more effectively to balance theory and practice.
+
+Next Week's Plan
+
+* Continue completing the remaining lab exercises in the workshop.
+
+* Gain a deeper understanding of the real-world project development process.
+
+* Practice more with Git/GitHub and branch management.
+
+* Improve your frontend and UI skills.
+
+* Attend all team meetings and provide regular progress updates.
+
+* Prepare content and materials for the next week's report.
