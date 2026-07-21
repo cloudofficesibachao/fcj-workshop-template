@@ -5,55 +5,44 @@ weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
-### Mục tiêu tuần 7:
+BÁO CÁO TUẦN 7
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+1. Nội dung công việc thực hiện
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* Tìm hiểu về JSP (Java Server Pages) và vai trò của JSP trong phát triển ứng dụng web.
+* Thực hành tạo các trang JSP cơ bản, sử dụng Expression, Scriptlet và Directive.
+* Tìm hiểu cơ chế xử lý request và response giữa client và server.
+* Thực hành truyền dữ liệu giữa các trang JSP.
+* Làm quen với việc xây dựng giao diện web động bằng JSP kết hợp HTML và CSS.
+* Hoàn thành các bài tập thực hành theo hướng dẫn của workshop tuần 7.
 
+2. Kết quả đạt được
 
-### Kết quả đạt được tuần 7:
+* Hiểu được khái niệm và cách hoạt động của JSP trong ứng dụng web Java.
+* Biết cách tạo và chạy các trang JSP trên môi trường phát triển.
+* Thực hiện được việc hiển thị dữ liệu động trên giao diện web.
+* Nắm được cách truyền dữ liệu giữa các thành phần trong ứng dụng.
+* Hoàn thành các bài tập thực hành và củng cố kiến thức về JSP.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+3. Khó khăn gặp phải
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Chưa quen với cú pháp JSP và cách nhúng mã Java vào trang web.
+* Gặp lỗi trong quá trình cấu hình môi trường và triển khai ứng dụng.
+* Khó khăn trong việc xử lý dữ liệu giữa các trang và theo dõi luồng hoạt động của chương trình.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+4. Cách giải quyết
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Đọc lại tài liệu hướng dẫn và tham khảo thêm tài liệu về JSP.
+* Kiểm tra từng bước cấu hình môi trường để xác định nguyên nhân lỗi.
+* Thực hành thêm các ví dụ đơn giản để hiểu rõ cách truyền dữ liệu và xử lý request/response.
+* Trao đổi với người hướng dẫn và các thành viên khác khi gặp vấn đề.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+5. Kế hoạch tuần tiếp theo
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Tiếp tục nghiên cứu các công nghệ Java Web nâng cao.
+* Tìm hiểu về Servlet và cách kết hợp Servlet với JSP.
+* Thực hành xây dựng các chức năng CRUD cơ bản cho ứng dụng web.
+* Hoàn thành đầy đủ các bài tập trong workshop tuần tiếp theo.
+* Ôn tập và củng cố kiến thức đã học để áp dụng vào dự án thực tế.
