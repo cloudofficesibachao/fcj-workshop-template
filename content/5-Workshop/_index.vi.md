@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-Cloud Office - He thong quan ly cho thue van phong tren AWS
+Cloud Office -Hệ thống quản lý cho thuê văn phòng trên AWS
 
 Cloud Office là nền tảng quản lý và đặt thuê văn phòng được xây dựng theo mô hình cloud-native. Dự án được thiết kế theo kiến trúc tách biệt giữa Frontend và Backend, giúp quá trình phát triển, triển khai và bảo trì trở nên thuận tiện hơn. Đồng thời, việc tách riêng các thành phần cũng giúp giảm tải khi cài đặt các thư viện Node.js, tối ưu quy trình phát triển và phù hợp với kiến trúc serverless trên nền tảng AWS.
 
