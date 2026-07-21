@@ -5,55 +5,68 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+BÁO CÁO TUẦN 1
+1. Nội dung công việc được phân công
 
-### Mục tiêu tuần 1:
+Trong tuần đầu tiên, em được tiếp cận với chương trình AWS First Cloud Journey (FCJ) và thực hiện các công việc sau:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tham gia workshop giới thiệu về AWS và lộ trình học
+* Tìm hiểu tài liệu hướng dẫn chương trình FCJ
+* Tạo tài khoản AWS và truy cập AWS Console
+* Làm quen với giao diện và các chức năng cơ bản của AWS
+* Tìm hiểu các dịch vụ cơ bản như EC2 và S3
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+⸻
 
+2. Cách thức tìm hiểu và triển khai
 
-### Kết quả đạt được tuần 1:
+Để thực hiện các công việc được giao, em đã tiến hành:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Tham gia workshop để nắm tổng quan về AWS và cách học
+* Đọc tài liệu hướng dẫn từ chương trình FCJ
+* Tự tạo tài khoản AWS và đăng nhập vào hệ thống
+* Trực tiếp thao tác trên AWS Console để làm quen giao diện
+* Tìm hiểu thông tin về EC2 (máy chủ ảo) và S3 (dịch vụ lưu trữ) thông qua tài liệu và thực hành cơ bản
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+Ngoài ra, em cũng ghi chú lại quá trình thực hiện để phục vụ cho việc tổng hợp báo cáo và worklog.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+⸻
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+3. Kết quả thực hiện
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+Sau khi hoàn thành các nhiệm vụ trong tuần, em đạt được các kết quả sau:
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Hiểu được khái niệm cơ bản về điện toán đám mây (Cloud Computing)
+* Tạo thành công tài khoản AWS và sử dụng được AWS Console
+* Nắm được chức năng cơ bản của một số dịch vụ chính như:
+    * EC2: dùng để tạo và quản lý máy chủ ảo
+    * S3: dùng để lưu trữ dữ liệu trên cloud
+* Làm quen với giao diện và cách thao tác trên nền tảng AWS
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+Tổng thời gian thực hiện trong tuần: khoảng 9 giờ.
+
+⸻
+
+4. Khó khăn gặp phải
+
+Trong quá trình thực hiện, em gặp một số khó khăn như:
+
+* Giao diện AWS còn khá phức tạp đối với người mới
+* Chưa hiểu rõ cách tính chi phí (pricing) của các dịch vụ
+* Một số thuật ngữ chuyên ngành còn khó tiếp cận
+
+⸻
+
+5. Kế hoạch tuần tiếp theo
+
+Trong tuần tiếp theo, em dự kiến sẽ:
+
+* Hoàn thành các lab cơ bản về EC2 và S3
+* Tìm hiểu cách triển khai server trên EC2
+* Thực hành upload và quản lý dữ liệu trên S3
+* Nghiên cứu thêm về cách tính chi phí của AWS
+* Hoàn thành các bài tập/assignment được giao
+
 
 
