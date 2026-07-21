@@ -6,34 +6,47 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+WEEK 9 REPORT
 
-**On this page**, you will need to introduce your worklog. **How** did you complete it? How many weeks did you take to complete the program? **What** did you do in those weeks?
+1. Content of work performed
 
-Typically, and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:
+* Get an overview of AWS Cloud Development Kit (AWS CDK) and basic components.
+* Practice deploying AWS infrastructure using Infrastructure as Code (IaC) through AWS CDK.
+* Study how to build and manage AWS resources using programming languages.
+* Learn the Three-Tier Architecture model including Presentation Layer, Application Layer and Database Layer.
+* Practice deploying components such as ECS, Application Load Balancer (ALB), and API Gateway using AWS CDK.
+* Learn Nested Stack to organize and manage infrastructure more effectively.
+* Participate in discussions with the team about database design and system interface on Figma.
+* Support developing technical documents and updating group project progress.
 
-**Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
+2. Results achieved
 
-**Week 2:** [Doing task A...](1.2-week2/)
+* Understand the operating principles and benefits of Infrastructure as Code.
+* Understand the infrastructure deployment process using AWS CDK.
+* Understand the structure and how to apply the Three-Tier Architecture model in practice.
+* Successfully practice creating and managing several AWS resources using CDK.
+* Complete assigned tasks in group projects.
+* Improve teamwork skills, technical communication and work progress management.
 
-**Week 3:** [Doing task B...](1.3-week3/)
+3. Difficulties encountered
 
-**Week 4:** [Doing task C...](1.4-week4/)
+* Unfamiliar with the syntax and structure of the AWS CDK project.
+* Difficulty in linking AWS services together when deploying infrastructure.
+* Takes a lot of time to learn how to organize the Nested Stack and manage dependencies between resources.
+* Some errors arise during deployment and service configuration.
 
-**Week 5:** [Doing task D...](1.5-week5/)
+4. Solution
 
-**Week 6:** [Doing task E...](1.6-week6/)
+* Read more of the official AWS CDK documentation and see hands-on examples.
+* Discuss with mentors and team members to better understand the system architecture.
+* Perform test deployment multiple times to determine the cause of the error.
+* Break down each infrastructure component for easier inspection and handling.
 
-**Week 7:** [Doing task G...](1.7-week7/)
+5. Plan for next week
 
-**Week 8:** [Doing task H...](1.8-week8/)
-
-**Week 9:** [Doing task I...](1.9-week9/)
-
-**Week 10:** [Doing task L...](1.10-week10/)
-
-**Week 11:** [Doing task M...](1.11-week11/)
-
-**Week 12:** [Doing task N...](1.12-week12/)
+* Learn Serverless architecture on AWS.
+* Practice building applications using AWS Lambda, API Gateway and DynamoDB.
+* Study the CI/CD pipeline with AWS CodePipeline.
+* Learn about CloudWatch and AWS X-Ray for system monitoring.
+* Continue to develop the functions of the group project according to the plan.
+* Complete technical documents and update project progress.
