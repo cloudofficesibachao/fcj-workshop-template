@@ -5,53 +5,68 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+Week 1 Report
 
+1. Assigned Tasks
 
-### Week 1 Objectives:
+During the first week, I was introduced to the AWS First Cloud Journey (FCJ) program and performed the following tasks:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Attended a workshop introducing AWS and the learning roadmap
+* Reviewed the FCJ program documentation
+* Created an AWS account and accessed the AWS Console
+* Familiarized myself with the AWS interface and basic functions
+* Learned about basic services such as EC2 and S3
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+*
 
+2. Learning and Implementation Methods
 
-### Week 1 Achievements:
+To complete the assigned tasks, I did the following:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Attended a workshop to gain an overview of AWS and how to learn
+* Read the FCJ program documentation
+* Created an AWS account and logged into the system
+* Directly worked on the AWS Console to familiarize myself with the interface
+* Learned about EC2 (virtual servers) and S3 (storage services) through documentation and basic practice
 
-* Successfully created and configured an AWS Free Tier account.
+In addition, I also took notes on the process to aid in the summary. Report and worklog.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+*
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+3. Results
 
-* Used AWS CLI to perform basic operations such as:
+After completing the tasks this week, I achieved the following results:
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Understanding the basic concepts of cloud computing
+* Successfully creating an AWS account and using the AWS Console
+* Understanding the basic functions of some key services such as:
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* EC2: used to create and manage virtual servers
+
+* S3: used to store data on the cloud
+* Familiarizing myself with the interface and how to operate on the AWS platform
+
+Total time spent this week: approximately 9 hours.
+
+⸻
+
+4. Difficulties Encountered
+
+During the implementation process, I encountered several difficulties such as:
+
+* The AWS interface is still quite complex for beginners
+* I don't fully understand how the pricing of services is calculated
+
+* Some technical terms are difficult to grasp
+
+⸻
+
+5. Plan for the Next Week
+
+In the next week, I plan to:
+
+* Complete the basic labs on EC2 and S3
+* Learn how to deploy a server on EC2
+* Practice uploading and managing data on S3
+* Further research on AWS pricing
+* Complete assigned exercises/assignments
