@@ -6,35 +6,29 @@ chapter : false
 pre : " <b> 5.3.1 </b> "
 ---
 
-1. Mở [Amazon VPC console](https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#Home:)
-2. Trong thanh điều hướng, chọn **Endpoints**, click **Create Endpoint**:
+Thực hiện
+Đăng nhập AWS Management Console.
+Tìm kiếm và mở dịch vụ Amazon VPC.
+Trong thanh điều hướng bên trái, chọn Endpoints, sau đó nhấn Create endpoint.
 
-{{% notice note %}}
-Bạn sẽ thấy 6 điểm cuối VPC hiện có hỗ trợ AWS Systems Manager (SSM). Các điểm cuối này được Mẫu CloudFormation triển khai tự động cho workshop này.
-{{% /notice %}}
+Cấu hình Endpoint
 
-![endpoint](/images/5-Workshop/5.3-S3-vpc/endpoints.png)
+Trong màn hình Create endpoint, cấu hình như sau:
 
-3. Trong Create endpoint console:
-+ Đặt tên cho endpoint: s3-gwe
-+ Trong service category, chọn **aws services**
+Name tag cloud-office-s3-endpoint
+Service category AWS services
 
-![endpoint](/images/5-Workshop/5.3-S3-vpc/create-s3-gwe1.png)
+Chọn VPC
+Đây là VPC chứa toàn bộ tài nguyên của hệ thống Cloud Office như:
 
-+ Trong **Services**, gõ "s3" trong hộp tìm kiếm và chọn dịch vụ với loại **gateway**
+Backend Server (EC2)
+Database Server
+Private Subnet
+Public Subnet
 
-![endpoint](/images/5-Workshop/5.3-S3-vpc/services.png)
+Sau khi tạo thành công S3 Gateway Endpoint:
 
-+ Đối với VPC, chọn **VPC Cloud** từ drop-down menu.
-+ Đối với Route tables, chọn bảng định tuyến mà đã liên kết với 2 subnets (lưu ý: đây không phải là bảng định tuyến chính cho VPC mà là bảng định tuyến thứ hai do CloudFormation tạo).
-
-![endpoint](/images/5-Workshop/5.3-S3-vpc/vpc.png)
-
-+ Đối với Policy, để tùy chọn mặc định là Full access để cho phép toàn quyền truy cập vào dịch vụ. Bạn sẽ triển khai VPC endpoint policy trong phần sau để chứng minh việc hạn chế quyền truy cập vào S3 bucket dựa trên các policies.
-
-![endpoint](/images/5-Workshop/5.3-S3-vpc/policy.png)
-
-+ Không thêm tag vào VPC endpoint.
-+ Click Create endpoint, click x sau khi nhận được thông báo tạo thành công.
-
-![endpoint](/images/5-Workshop/5.3-S3-vpc/complete.png)
+Backend Server của Cloud Office có thể upload và download tài liệu từ Amazon S3.
+Lưu lượng truyền giữa EC2 và S3 không đi qua Internet công cộng.
+Giảm chi phí sử dụng NAT Gateway khi xử lý nhiều hợp đồng và tài liệu.
+Tăng cường bảo mật cho dữ liệu của hệ thống.
