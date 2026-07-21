@@ -6,17 +6,18 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+### Blog 1 - How to Use AD FS Users and Tableau to Securely Query Data in AWS Lake Formation
 
-This section will list and introduce the blogs you have posted to [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). For example:
+AWS Lake Formation supports integration with Identity Providers (IdPs) such as Microsoft Active Directory Federation Services (AD FS) via SAML 2.0, allowing users to authenticate using their enterprise Active Directory accounts when accessing data. Combined with Tableau and Amazon Athena, users can securely query data in the Data Lake without creating IAM Users or using static Access Keys.
 
-###  [Blog 1 - SESSION POLICIES IN AMAZON EKS POD IDENTITY](3.1-Blog1/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+### Blog 2 - Building a Modern, Reliable, Multi-Region Data Architecture with AWS Glue and AWS Lake Formation
+Building a Multi-Region Data Lake on AWS aims to:
+Ensure high availability.
+Support disaster recovery (DR).
+Manage and share data centrally.
 
-###  [Blog 2 - ...](3.2-Blog2/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+Detailed permission management down to each table, column, or row.
+Supports real-time and batch data analysis.
 
 ###  [Blog 3 - ...](3.3-Blog3/)
 This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
