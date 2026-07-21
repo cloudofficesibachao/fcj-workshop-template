@@ -5,53 +5,62 @@ weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
-### Week 7 Objectives:
+WEEK 7 REPORT
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+1. Work Completed
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* Learn about JSP (Java Server Pages) and its role in web application development.
 
+* Practice creating basic JSP pages using Expressions, Scriptlets, and Directives.
 
-### Week 7 Achievements:
+* Learn about the mechanism of request and response handling between client and server.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Practice transferring data between JSP pages.
 
-* Successfully created and configured an AWS Free Tier account.
+* Become familiar with building dynamic web interfaces using JSP combined with HTML and CSS.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Complete the practical exercises as instructed in Week 7 workshop.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+2. Achieved Results
 
-* Used AWS CLI to perform basic operations such as:
+* Understand the concept and operation of JSP in Java web applications.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Know how to create and run JSP pages in the development environment.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Implement dynamic data display on the web interface.
+
+* Understand how to transfer data between application components.
+
+* Complete practical exercises and reinforce knowledge of JSP.
+
+3. Difficulties Encountered
+
+* Unfamiliarity with JSP syntax and embedding Java code into web pages.
+
+* Errors encountered during environment configuration and application deployment.
+
+* Difficulty handling data between pages and monitoring program flow.
+
+4. Solutions
+
+* Review the documentation and refer to additional JSP documentation.
+
+* Check each environment configuration step to identify the cause of the error.
+
+* Practice with simple examples to better understand data transmission and request/response handling.
+
+* Discuss problems with the instructor and other members.
+
+5. Plan for the Next Week
+
+* Continue researching advanced Java Web technologies.
+
+* Learn about Servlets and how to combine them with JSP.
+
+* Practice building basic CRUD functionalities for web applications.
+
+* Complete all assignments in the workshop next week.
+
+* Review and reinforce learned knowledge to apply it to a real-world project.
