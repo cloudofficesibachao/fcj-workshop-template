@@ -6,35 +6,33 @@ chapter : false
 pre : " <b> 5.3.1 </b> "
 ---
 
-1. Open the [Amazon VPC console](https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#Home:)
-2. In the navigation pane, choose **Endpoints**, then click **Create Endpoint**:
 
-{{% notice note %}}
-You will see **6 existing VPC endpoints** that support **AWS Systems Manager (SSM)**. These endpoints were deployed automatically by the **CloudFormation Templates** for this workshop.
-{{% /notice %}}
 
-![endpoint](/images/5-Workshop/5.3-S3-vpc/endpoints.png)
+Instructions:
 
-3. In the Create endpoint console:
-+ Specify name of the endpoint: ```s3-gwe```
-+ In service category, choose **AWS services**
+Log in to the AWS Management Console.
+Search for and open the Amazon VPC service.
 
-![endpoint](/images/5-Workshop/5.3-S3-vpc/create-s3-gwe1.png)
+In the left-hand navigation bar, select Endpoints, then click Create endpoint.
 
-+ In **Services**, type ```s3``` in the search box and choose the service with type **gateway**
+Configure the Endpoint
 
-![endpoint](/images/5-Workshop/5.3-S3-vpc/services.png)
+In the Create endpoint screen, configure as follows:
 
-+ For VPC, select **VPC Cloud** from the drop-down.
-+ For **Configure route tables**, select the route table that is already associated with **two subnets** (note: this is not the main route table for the VPC, but a second route table created by CloudFormation).
+Name tag: cloud-office-s3-endpoint
+Service category: AWS services
 
-![endpoint](/images/5-Workshop/5.3-S3-vpc/vpc.png)
+Select VPC
+This VPC contains all the resources of the Cloud Office system, such as:
 
-+ **For Policy**, leave the default option, **Full Access**, to allow full access to the service. You will deploy **a VPC endpoint policy** in a later lab module to demonstrate restricting access to **S3 buckets** based on policies.
+Backend Server (EC2)
+Database Server
+Private Subnet
+Public Subnet
 
-![endpoint](/images/5-Workshop/5.3-S3-vpc/policy.png)
+After successfully creating the S3 Gateway Endpoint:
 
-+ Do not add a tag to the VPC endpoint at this time.
-+ Click **Create endpoint**, then click x after receiving a successful creation message.
-
-![endpoint](/images/5-Workshop/5.3-S3-vpc/complete.png)
+The Cloud Office Backend Server can upload and download documents from Amazon S3.
+Traffic between EC2 and S3 does not go through the public internet.
+Reduces the cost of using NAT Gateway when handling many contracts and documents.
+Enhances the security of the system's data.
