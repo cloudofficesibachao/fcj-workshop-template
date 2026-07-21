@@ -7,47 +7,30 @@ pre: " <b> 1. </b> "
 ---
 
 
-BÁO CÁO TUẦN 9
+Trong trang này bạn sẽ cần giới thiệu worklog của bạn như thế nào? Bạn hoàn thành chương trình trong vòng bao nhiêu tuần? Bạn đã làm gì trong các tuần đó?
 
-1. Nội dung công việc thực hiện
+Thông thường và cũng là tiêu chuẩn, một worklog được thực hiện trong khoảng 3 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:
 
-* Tìm hiểu tổng quan về AWS Cloud Development Kit (AWS CDK) và các thành phần cơ bản.
-* Thực hành triển khai hạ tầng AWS bằng Infrastructure as Code (IaC) thông qua AWS CDK.
-* Nghiên cứu cách xây dựng và quản lý tài nguyên AWS bằng ngôn ngữ lập trình.
-* Tìm hiểu mô hình Three-Tier Architecture gồm Presentation Layer, Application Layer và Database Layer.
-* Thực hành triển khai các thành phần như ECS, Application Load Balancer (ALB) và API Gateway bằng AWS CDK.
-* Tìm hiểu Nested Stack để tổ chức và quản lý hạ tầng hiệu quả hơn.
-* Tham gia trao đổi với nhóm về thiết kế cơ sở dữ liệu và giao diện hệ thống trên Figma.
-* Hỗ trợ xây dựng tài liệu kỹ thuật và cập nhật tiến độ dự án nhóm.
+Tuần 1: Làm quen với AWS và các dịch vụ cơ bản trong AWS
 
-2. Kết quả đạt được
+Tuần 2: Làm công việc A…
 
-* Hiểu được nguyên lý hoạt động và lợi ích của Infrastructure as Code.
-* Nắm được quy trình triển khai hạ tầng bằng AWS CDK.
-* Hiểu cấu trúc và cách áp dụng mô hình Three-Tier Architecture vào thực tế.
-* Thực hành thành công việc tạo và quản lý một số tài nguyên AWS bằng CDK.
-* Hoàn thiện các phần việc được phân công trong dự án nhóm.
-* Cải thiện kỹ năng làm việc nhóm, trao đổi kỹ thuật và quản lý tiến độ công việc.
+Tuần 3: Làm công việc B…
 
-3. Khó khăn gặp phải
+Tuần 4: Làm công việc C…
 
-* Chưa quen với cú pháp và cấu trúc dự án AWS CDK.
-* Khó khăn trong việc liên kết các dịch vụ AWS với nhau khi triển khai hạ tầng.
-* Mất nhiều thời gian để tìm hiểu cách tổ chức Nested Stack và quản lý dependencies giữa các tài nguyên.
-* Một số lỗi phát sinh trong quá trình deploy và cấu hình dịch vụ.
+Tuần 5: Làm công việc D…
 
-4. Cách giải quyết
+Tuần 6: Làm công việc E…
 
-* Đọc thêm tài liệu chính thức của AWS CDK và tham khảo các ví dụ thực hành.
-* Trao đổi với mentor và các thành viên trong nhóm để hiểu rõ hơn về kiến trúc hệ thống.
-* Thực hiện deploy thử nghiệm nhiều lần để xác định nguyên nhân lỗi.
-* Chia nhỏ từng thành phần hạ tầng để kiểm tra và xử lý dễ dàng hơn.
+Tuần 7: Làm công việc G…
 
-5. Kế hoạch tuần tiếp theo
+Tuần 8: Làm công việc H…
 
-* Tìm hiểu kiến trúc Serverless trên AWS.
-* Thực hành xây dựng ứng dụng sử dụng AWS Lambda, API Gateway và DynamoDB.
-* Nghiên cứu quy trình CI/CD với AWS CodePipeline.
-* Tìm hiểu CloudWatch và AWS X-Ray phục vụ việc giám sát hệ thống.
-* Tiếp tục phát triển các chức năng của dự án nhóm theo kế hoạch đề ra.
-* Hoàn thiện tài liệu kỹ thuật và cập nhật tiến độ dự án.
+Tuần 9: Làm công việc I…
+
+Tuần 10: Làm công việc L…
+
+Tuần 11: Làm công việc M…
+
+Tuần 12: Làm công việc N…
