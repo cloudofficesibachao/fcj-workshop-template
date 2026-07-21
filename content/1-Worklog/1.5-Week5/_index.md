@@ -5,53 +5,62 @@ weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
-### Week 5 Objectives:
+WEEK 5 REPORT
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+1. Work Completed
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* Learn about AWS storage services including Amazon S3, EBS, and EFS.
 
+* Practice creating and managing buckets on S3, uploading/downloading data, and setting access permissions.
 
-### Week 5 Achievements:
+* Research data analytics and processing services such as Amazon Athena, AWS Glue, Amazon Redshift, and Kinesis.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Gain an overview of AI/ML on AWS through the Amazon SageMaker service.
 
-* Successfully created and configured an AWS Free Tier account.
+* Participate in workshops, review documentation, and practice labs according to Week 5 content.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Take notes on knowledge and complete assigned practical exercises.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+2. Achieved Results
 
-* Used AWS CLI to perform basic operations such as:
+* Understand the differences between S3, EBS, and EFS storage services.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Know how to create S3 buckets, manage data, and set basic access permissions.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Understand the data processing and analysis process on AWS through Athena, Glue, and Redshift.
+
+* Have basic knowledge of AI/ML and how to apply SageMaker in building machine learning models.
+
+* Complete practical lab exercises and strengthen skills in using the AWS Console.
+
+3. Difficulties Encountered
+
+* Initially confused the functions and usage of EBS, EFS, and S3.
+
+* Some Analytics services have many new concepts, making them difficult to understand.
+
+* Encountered access permission configuration errors when working with S3 and Athena.
+
+* Unfamiliar with cloud data processing procedures, requiring significant time to learn.
+
+4. Solutions
+
+* Review the documentation and workshop videos to understand the fundamental concepts.
+
+* Practice repeatedly on the AWS Console to become familiar with configuration operations.
+
+* Consult AWS Documentation and seek guidance from mentors/friends.
+
+* Note down common errors and how to resolve them to avoid repeating them.
+
+5. Plan for the following week
+
+* Continue reviewing the AWS services learned and practice more lab exercises.
+
+* Learn about AWS Security and Cost Management as covered in week 6.
+
+* Further develop skills in managing IAM, securing AWS resources, and optimizing costs.
+
+* Prepare documentation and complete all assigned tasks for the following week.
