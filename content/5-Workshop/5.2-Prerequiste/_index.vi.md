@@ -6,9 +6,7 @@ chapter : false
 pre : " <b> 5.2. </b> "
 ---
 
-#### IAM permissions
-Gắn IAM permission policy sau vào tài khoản aws user của bạn để triển khai và dọn dẹp tài nguyên trong workshop này.
-```
+
 ### IAM Permissions
 
 Gắn IAM Policy sau vào tài khoản AWS của bạn để chuẩn bị quyền tạo tài nguyên cho hệ thống Cloud Office:
