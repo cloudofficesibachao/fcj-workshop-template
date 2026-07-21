@@ -5,55 +5,50 @@ weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+Báo cáo tuần 4
 
-### Mục tiêu tuần 4:
+Nội dung công việc thực hiện
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Trong tuần 4, em tiếp tục tìm hiểu và thực hành các nội dung liên quan đến quy trình phát triển phần mềm và công nghệ sử dụng trong dự án workshop. Các công việc đã thực hiện gồm:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* Tìm hiểu thêm về quy trình làm việc nhóm và quản lý công việc bằng Jira/GitHub.
+* Thực hành các bài lab được giao trong workshop và ghi chú lại các lỗi thường gặp trong quá trình thực hiện.
+* Ôn tập kiến thức về Frontend cơ bản, xử lý giao diện và kết nối dữ liệu.
+* Tham gia trao đổi nhóm để phân chia công việc và cập nhật tiến độ thực hiện.
+* Tìm hiểu thêm về cách triển khai project thực tế và quy trình báo cáo công việc hằng tuần.
+* Đọc tài liệu liên quan đến Agile/Scrum và cách quản lý task trong sprint.
 
+Kết quả đạt được
 
-### Kết quả đạt được tuần 4:
+* Hoàn thành các bài lab và nhiệm vụ được giao trong tuần.
+* Hiểu rõ hơn về quy trình quản lý source code bằng GitHub.
+* Cải thiện kỹ năng làm việc nhóm và phối hợp với các thành viên.
+* Nắm được cách quản lý task và theo dõi tiến độ công việc thông qua Jira.
+* Rèn luyện thêm kỹ năng tìm lỗi và xử lý lỗi trong quá trình code.
+* Có thêm kiến thức về mô hình Agile và cách triển khai công việc theo sprint.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+Khó khăn gặp phải
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Một số lỗi phát sinh trong quá trình thực hành khiến thời gian xử lý kéo dài.
+* Chưa quen với cách quản lý nhiều task cùng lúc nên đôi lúc còn bị chậm tiến độ.
+* Việc đọc tài liệu tiếng Anh chuyên ngành còn mất khá nhiều thời gian.
+* Khó khăn trong việc phối hợp và đồng bộ tiến độ giữa các thành viên trong nhóm.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+Cách giải quyết
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Chủ động tìm kiếm tài liệu hướng dẫn và tham khảo thêm từ internet để xử lý lỗi.
+* Trao đổi với bạn bè và mentor khi gặp vấn đề khó.
+* Chia nhỏ công việc theo từng bước để dễ theo dõi và hoàn thành đúng thời hạn.
+* Ghi chú lại các lỗi thường gặp và cách khắc phục để tránh lặp lại.
+* Sắp xếp thời gian hợp lý hơn để cân bằng giữa việc học lý thuyết và thực hành.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+Kế hoạch tuần tiếp theo
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+* Tiếp tục hoàn thiện các bài lab còn lại trong workshop.
+* Tìm hiểu sâu hơn về quy trình phát triển dự án thực tế.
+* Luyện tập thêm về Git/GitHub và cách quản lý branch.
+* Nâng cao kỹ năng frontend và xử lý giao diện.
+* Tham gia đầy đủ các buổi họp nhóm và cập nhật tiến độ công việc thường xuyên.
+* Chuẩn bị nội dung và tài liệu cho báo cáo tuần tiếp theo.
 
