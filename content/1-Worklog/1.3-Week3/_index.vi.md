@@ -5,55 +5,41 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
-### Mục tiêu tuần 3:
+Báo cáo tuần 3
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+1. Nội dung công việc thực hiện
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* Tìm hiểu và thực hành các bài lab trong tuần 3 trên hệ thống FCJ Workshop.
+* Làm quen với quy trình triển khai website tĩnh và cấu trúc source code.
+* Thực hành chỉnh sửa giao diện, nội dung và cấu hình các thành phần của website.
+* Nghiên cứu cách deploy website và kiểm tra hoạt động sau khi triển khai.
 
+2. Kết quả đạt được
 
-### Kết quả đạt được tuần 3:
+* Hoàn thành các bài lab được giao trong tuần.
+* Hiểu được quy trình xây dựng và triển khai một website tĩnh cơ bản.
+* Biết cách chỉnh sửa source code và cập nhật nội dung giao diện.
+* Website sau khi triển khai hoạt động ổn định và truy cập được.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+3. Khó khăn gặp phải
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Ban đầu còn chưa quen với cấu trúc thư mục và cách hoạt động của project.
+* Gặp lỗi trong quá trình cấu hình và deploy website.
+* Một số thao tác trên môi trường triển khai còn chưa thành thạo.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+4. Cách giải quyết
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Tìm hiểu thêm tài liệu hướng dẫn từ workshop và Internet.
+* Trao đổi với các thành viên và mentor để xử lý lỗi phát sinh.
+* Thực hành lại nhiều lần để làm quen với quy trình triển khai.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+5. Kế hoạch tuần tiếp theo
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Tiếp tục hoàn thành các bài lab của tuần tiếp theo.
+* Tìm hiểu sâu hơn về quy trình deploy và quản lý website.
+* Nâng cao kỹ năng xử lý lỗi và tối ưu giao diện website.
+* Hoàn thiện kiến thức về quy trình làm việc thực tế trong dự án.
 
 
