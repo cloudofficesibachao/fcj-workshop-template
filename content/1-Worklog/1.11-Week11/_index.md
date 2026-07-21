@@ -5,53 +5,60 @@ weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
-### Week 11 Objectives:
+Internship Report - Week 11
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+1. Work Performed
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* Research the API Flow design process for the user submission function (User Submissions).
 
+* Learn about the process of uploading photos to Amazon S3 and how to store photo information in the database.
 
-### Week 11 Achievements:
+* Design the data processing flow from the user to the backend via the API Gateway.
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Build a processing flow diagram for the functions of creating posts, uploading photos, and retrieving data.
 
-* Successfully created and configured an AWS Free Tier account.
+* Understand the user permission mechanism when performing data submission and photo upload operations.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Discuss with the team the API structure and how to organize data to ensure system scalability and maintainability.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+2. Achieved Results
 
-* Used AWS CLI to perform basic operations such as:
+* Understand the API operation process for the User Submissions function.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Understand how to integrate Amazon S3 to store images and manage image metadata.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Designed the data processing flow between the Client, API Gateway, Backend, and AWS services.
+
+* Completed the API Flow diagram to support the development of subsequent project functionalities.
+
+* Strengthened knowledge of RESTful API design and how to organize data flow in a Cloud system.
+
+3. Difficulties Encountered
+
+* Initially, there were difficulties in determining the processing order between image loading and post data saving.
+
+* Unfamiliarity with designing API flows for multiple exceptions such as image loading errors or invalid data.
+
+* The connection between AWS components needs further study to optimize performance and security.
+
+4. Solutions
+
+* Reviewed workshop materials and AWS documentation on API Gateway, Amazon S3, and Serverless architecture.
+
+* Discussed with team members to agree on the data processing workflow.
+
+* Designed a step-by-step flow diagram before building the API to minimize errors during development. * Review exceptions to ensure API stability.
+
+5. Next Week's Plan
+
+* Implement the APIs according to the design.
+
+* Integrate the image upload functionality with Amazon S3 into the system.
+
+* Test the APIs using Postman and evaluate the results.
+
+* Complete the User Submissions functionality and continue optimizing the system's performance and security.
+
+* Prepare technical documentation and update the team on project progress.
