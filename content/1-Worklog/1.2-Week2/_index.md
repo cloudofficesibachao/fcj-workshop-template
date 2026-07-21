@@ -5,53 +5,88 @@ weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
-### Week 2 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+WEEKLY REPORT - WEEK 2 
 
 
-### Week 2 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+1. Work Completed
 
-* Successfully created and configured an AWS Free Tier account.
+During week 2, I continued to study and practice the workshop-related content, focusing on improving my foundational knowledge and applying it in practice.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+Specifically:
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* I studied the detailed content of week 2's lesson on the workshop system.
 
-* Used AWS CLI to perform basic operations such as:
+* I understood the objectives and requirements of the lesson.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* I practiced according to the instructions (lab/exercises if any).
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* I became familiar with the tools and working environment.
+
+* I took notes on important knowledge to use in the following weeks.
+
+In addition, I also:
+
+* I reviewed week 1's knowledge to connect the content.
+
+* I independently researched additional external materials to gain a better understanding.
+
+⸻
+
+2. Achieved Results
+
+After completing week 2, I have:
+
+* Gained a better understanding of the content and workflow in the workshop.
+
+* Learned how to apply theory to practice.
+
+* Become familiar with new tools/knowledge.
+
+* Completed assigned exercises.
+
+Improved skills:
+
+* Logical thinking
+
+* Self-learning ability
+
+* Document search skills
+
+⸻
+
+3. Difficulties Encountered
+
+During the process, I encountered some difficulties. Points to note:
+
+* Some content is new and therefore difficult to understand initially.
+
+* Time is needed to get familiar with the tool.
+
+* Errors may occur during practice, but the user may not know how to handle them immediately.
+
+*
+
+4. Solutions
+
+* Review the documentation and tutorial videos multiple times.
+
+* Search for more information on Google/related documents.
+
+* Ask friends or consult the community.
+
+* Debugging and trying different approaches.
+
+*
+
+5. Plan for the following week
+
+* Continue studying the content from week 3.
+
+* Review the knowledge from week 2 to solidify your understanding.
+
+* Complete the parts you still don't understand.
+
+* Improve your speed in completing assignments and practicing.
