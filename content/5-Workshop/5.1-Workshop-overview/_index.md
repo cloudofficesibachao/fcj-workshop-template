@@ -6,13 +6,23 @@ chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-#### VPC endpoints
-+ **VPC endpoints** are virtual devices. They are horizontally scaled, redundant, and highly available VPC components. They allow communication between your compute resources and AWS services without imposing availability risks.
-+ Compute resources running in VPC can access  **Amazon S3**  using a Gateway endpoint. PrivateLink interface endpoints can be used by compute resources running in VPC or on-premises.
 
-#### Workshop overview
-In this workshop, you will use two VPCs. 
-+ **"VPC Cloud"** is for cloud resources such as a  **Gateway endpoint** and an EC2 instance to test with. 
-+ **"VPC On-Prem"** simulates an on-premises environment such as a factory or corporate datacenter. An EC2 instance running strongSwan VPN software has been deployed in "VPC On-prem" and automatically configured to establish a Site-to-Site VPN tunnel with AWS Transit Gateway. This VPN simulates connectivity from an on-premises location to the AWS cloud. To minimize costs, only one VPN instance is provisioned to support this workshop. When planning VPN connectivity for your production workloads, AWS recommends using multiple VPN devices for high availability.
+Cloud Office – An AWS-based Office Leasing Management System
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+Introduction
+
+Cloud Office is an office leasing management system built on the Amazon Web Services (AWS) cloud computing platform to support businesses and office property management companies in digitizing their entire management process. The system provides functions ranging from managing buildings, floors, offices, clients, lease agreements, and invoices to tracking office usage and generating statistical reports.
+
+Deployment on AWS ensures flexible scalability, high availability, strong security, and optimized operating costs. Furthermore, users can access the system anytime, anywhere via a web browser without needing to install any software.
+
+System Overview
+
+Cloud Office is designed using a multi-tier web application architecture, including:
+
+Frontend: Developed using Blazor Web App, providing an intuitive interface for administrators, employees, and customers.
+
+Backend: Built on ASP.NET Core Web API, handling business processes such as office management, contracts, customers, and payments.
+
+Database: Uses Microsoft SQL Server on Amazon RDS or SQL Server installed on Amazon EC2 to store data.
+
+Cloud Infrastructure: The system is deployed on AWS with services such as EC2, RDS, S3, IAM, VPC, and CloudWatch to ensure performance, security, and monitoring capabilities.
