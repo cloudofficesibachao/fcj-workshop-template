@@ -6,38 +6,71 @@ chapter : false
 pre : " <b> 5.4.2 </b> "
 ---
 
-Trong phần này, bạn sẽ tạo và kiểm tra Interface Endpoint  S3 bằng cách sử dụng môi trường truyền thống mô phỏng.
+Mục tiêu
 
-1. Quay lại Amazon VPC menu. Trong thanh điều hướng bên trái, chọn Endpoints, sau đó click Create Endpoint.
+Trong phần này, chúng ta sẽ tạo Interface Endpoint cho các dịch vụ AWS mà Cloud Office sử dụng.
 
-2. Trong Create endpoint console:
-+ Đặt tên interface endpoint
-+ Trong Service category, chọn **aws services** 
+Thực hiện
 
-![name](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint1.png)
+Mở Amazon VPC
 
-3.  Trong Search box, gõ S3 và nhấn Enter. Chọn endpoint có tên com.amazonaws.us-east-1.s3. Đảm bảo rằng cột Type có giá trị Interface.
+Chọn
 
-![service](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint2.png)
+Endpoints
 
-4. Đối với VPC, chọn VPC Cloud từ drop-down.
-{{% notice warning %}}
-Đảm bảo rằng bạn chọn "VPC Cloud" và không phải "VPC On-prem"
-{{% /notice %}}
-+ Mở rộng **Additional settings** và đảm bảo rằng Enable DNS name *không* được chọn (sẽ sử dụng điều này trong phần tiếp theo của workshop)
+Chọn
 
-![vpc](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint3.png)
+Create endpoint
 
-5. Chọn 2 subnets trong AZs sau: us-east-1a and us-east-1b
+Name
 
-![subnets](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint4.png)
+Đặt tên
 
-6. Đối với Security group, chọn SGforS3Endpoint:
+cloud-office-ssm-endpoint
+Service Category
 
-![sg](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint5.png)
+Chọn
 
-7. Giữ default policy - full access và click Create endpoint
+AWS services
+Services
 
-![success](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint-success.png)
+Tìm
 
-Chúc mừng bạn đã tạo thành công S3 interface endpoint. Ở bước tiếp theo, chúng ta sẽ kiểm tra interface endpoint.
+Systems Manager
+
+hoặc
+
+ssm
+
+Chọn dịch vụ
+
+com.amazonaws.<region>.ssm
+
+Interface
+
+VPC
+
+Chọn
+
+CloudOffice-VPC
+Subnets
+
+Chọn Private Subnet chứa Backend Server.
+
+Security Group
+
+Chọn Security Group của Interface Endpoint.
+
+Security Group cần cho phép HTTPS (443) từ Backend Server.
+
+Private DNS
+
+Đánh dấu
+
+Enable DNS name
+
+Điều này giúp Backend Server có thể truy cập dịch vụ AWS bằng tên miền mặc định mà không cần thay đổi ứng dụng.
+
+Nhấn
+
+Create endpoint
