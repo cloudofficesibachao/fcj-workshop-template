@@ -6,15 +6,12 @@ chapter : false
 pre : " <b> 5.4. </b> "
 ---
 
-#### Tổng quan
+Trong hệ thống Cloud Office, Backend Server được triển khai trong Private Subnet nhằm hạn chế truy cập trực tiếp từ Internet. Tuy nhiên, máy chủ vẫn cần kết nối tới một số dịch vụ của AWS để phục vụ quá trình vận hành hệ thống như:
 
-+ Trong phần này, bạn sẽ tạo một Interface Endpoint để truy cập Amazon S3 từ môi trường truyền thống mô phỏng. Interface Endpoint sẽ cho phép bạn định tuyến đến Amazon S3 qua kết nối VPN từ môi trường truyền thống mô phỏng của bạn.
+AWS Systems Manager (SSM) để quản trị máy chủ.
+Amazon CloudWatch để thu thập log và giám sát ứng dụng.
+AWS Secrets Manager (nếu sử dụng) để lưu trữ chuỗi kết nối cơ sở dữ liệu và các thông tin nhạy cảm.
 
-+ Tại sao nên sử dụng **Interface Endpoint**:
-    + Các Gateway endpoints chỉ hoạt động với các tài nguyên đang chạy trong VPC nơi chúng được tạo. Interface Endpoint  hoạt động với tài nguyên chạy trong VPC và cả tài nguyên chạy trong môi trường truyền thống. Khả năng kết nối từ môi trường truyền thống của bạn với aws cloud có thể được cung cấp bởi AWS Site-to-Site VPN hoặc AWS Direct Connect.
-    + Interface Endpoint cho phép bạn kết nối với các dịch vụ do AWS PrivateLink cung cấp. Các dịch vụ này bao gồm một số dịch vụ AWS, dịch vụ do các đối tác và khách hàng AWS lưu trữ trong VPC của riêng họ (gọi tắt là Dịch vụ PrivateLink endpoints) và các dịch vụ Đối tác AWS Marketplace. Đối với workshop này, chúng ta sẽ tập trung vào việc kết nối với Amazon S3.
-    
-![Interface endpoint architecture](/images/5-Workshop/5.4-S3-onprem/diagram3.png)
+Nếu không sử dụng VPC Interface Endpoint, các yêu cầu này sẽ phải đi qua Internet Gateway hoặc NAT Gateway. Điều này vừa làm tăng chi phí vừa giảm mức độ bảo mật.
 
-
-
+Trong phần thực hành này, chúng ta sẽ tạo VPC Interface Endpoint để Backend Server của Cloud Office có thể truy cập các dịch vụ AWS hoàn toàn thông qua mạng nội bộ của AWS.
