@@ -1,3 +1,4 @@
+<img width="987" height="552" alt="z8017702787875_29f6937410b357be65366c9febe426db" src="https://github.com/user-attachments/assets/5d733047-90f6-4dbc-b01a-aa47816767c2" />
 ---
 title : "Giới thiệu"
 date : 2024-01-01 
