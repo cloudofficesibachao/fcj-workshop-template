@@ -5,55 +5,43 @@ weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+Báo cáo thực tập tuần 11
 
-### Mục tiêu tuần 11:
+1. Nội dung công việc thực hiện
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nghiên cứu quy trình thiết kế API Flow cho chức năng người dùng gửi nội dung (User Submissions).
+* Tìm hiểu quy trình tải ảnh (Photo Upload) lên Amazon S3 và cách lưu trữ thông tin ảnh trong cơ sở dữ liệu.
+* Thiết kế luồng xử lý dữ liệu từ phía người dùng đến Backend thông qua API Gateway.
+* Xây dựng sơ đồ luồng xử lý cho các chức năng tạo bài đăng, tải ảnh và truy xuất dữ liệu.
+* Tìm hiểu cơ chế phân quyền người dùng khi thực hiện các thao tác gửi dữ liệu và tải ảnh.
+* Thảo luận với nhóm về cấu trúc API và cách tổ chức dữ liệu nhằm đảm bảo khả năng mở rộng và bảo trì hệ thống.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+2. Kết quả đạt được
 
+* Hiểu được quy trình hoạt động của API phục vụ chức năng User Submissions.
+* Nắm được cách tích hợp Amazon S3 để lưu trữ hình ảnh và quản lý metadata của ảnh.
+* Thiết kế được luồng xử lý dữ liệu giữa Client, API Gateway, Backend và các dịch vụ AWS.
+* Hoàn thiện sơ đồ API Flow phục vụ cho việc phát triển các chức năng tiếp theo của dự án.
+* Củng cố kiến thức về thiết kế RESTful API và cách tổ chức luồng dữ liệu trong hệ thống Cloud.
 
-### Kết quả đạt được tuần 11:
+3. Khó khăn gặp phải
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Ban đầu còn gặp khó khăn trong việc xác định thứ tự xử lý giữa việc tải ảnh và lưu dữ liệu bài đăng.
+* Chưa quen với việc thiết kế luồng API cho nhiều trường hợp ngoại lệ như lỗi tải ảnh hoặc dữ liệu không hợp lệ.
+* Việc kết nối giữa các thành phần AWS cần được nghiên cứu thêm để tối ưu hiệu suất và bảo mật.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+4. Cách giải quyết
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Đọc lại tài liệu workshop và tài liệu AWS về API Gateway, Amazon S3 và kiến trúc Serverless.
+* Thảo luận với các thành viên trong nhóm để thống nhất quy trình xử lý dữ liệu.
+* Thiết kế sơ đồ luồng từng bước trước khi xây dựng API nhằm hạn chế sai sót trong quá trình phát triển.
+* Kiểm tra lại các trường hợp ngoại lệ để đảm bảo API hoạt động ổn định.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+5. Kế hoạch tuần tiếp theo
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Tiến hành hiện thực các API theo thiết kế đã xây dựng.
+* Tích hợp chức năng Upload ảnh với Amazon S3 vào hệ thống.
+* Kiểm thử các API bằng Postman và đánh giá kết quả trả về.
+* Hoàn thiện chức năng User Submissions và tiếp tục tối ưu hiệu năng, bảo mật của hệ thống.
+* Chuẩn bị tài liệu kỹ thuật và cập nhật tiến độ dự án cho nhóm.
