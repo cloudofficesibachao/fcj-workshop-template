@@ -6,77 +6,57 @@ chapter : false
 pre : " <b> 5.3.2 </b> "
 ---
 
-#### Tạo S3 bucket
+Trong hệ thống Cloud Office, Backend Server chịu trách nhiệm xử lý các thao tác lưu trữ tài liệu như hợp đồng thuê văn phòng, hóa đơn, hình ảnh văn phòng và các tài liệu đính kèm của khách hàng. Việc kiểm tra này giúp xác nhận rằng máy chủ có thể giao tiếp với Amazon S3 thông qua Gateway Endpoint mà không cần sử dụng Internet Gateway hoặc NAT Gateway.
 
-1. Đi đến S3 management console
-2. Trong Bucket console, chọn **Create bucket**
+Tạo Amazon S3 Bucket
 
-![Create bucket](/images/5-Workshop/5.3-S3-vpc/create-bucket.png)
+Đầu tiên, tạo một S3 Bucket để lưu trữ tài liệu của hệ thống Cloud Office.
 
-3. Trong Create bucket console
-+ Đặt tên bucket: chọn 1 tên mà không bị trùng trong phạm vi toàn cầu (gợi ý: lab\<số-lab\>\<tên-bạn\>)
+Đăng nhập AWS Management Console.
+Mở dịch vụ Amazon S3.
+Chọn Create bucket.
 
-![Bucket name](/images/5-Workshop/5.3-S3-vpc/bucket-name.png)
+Cấu hình Bucket
+Trong màn hình Create bucket, nhập các thông tin: Bucket name
+Tên Bucket sẽ được sử dụng để lưu:
+Hợp đồng thuê văn phòng
+Hóa đơn thanh toán
+Hình ảnh văn phòng
+Hồ sơ khách hàng
+Các tài liệu đính kèm
+
+Giữ nguyên các thiết lập mặc định còn lại và chọn Create bucket.
 
 
-+ Giữ nguyên giá trị của các fields khác (default)
-+ Kéo chuột xuống và chọn **Create bucket**
+Kết nối Backend Server bằng AWS Session Manager
 
-![Create](/images/5-Workshop/5.3-S3-vpc/create-button.png)    
+Để kiểm tra kết nối đến Amazon S3, chúng ta sẽ đăng nhập vào Backend Server thông qua AWS Systems Manager Session Manager.
 
-+ Tạo thành công S3 bucket
+Session Manager là một tính năng của AWS Systems Manager cho phép quản trị viên truy cập EC2 thông qua trình duyệt mà không cần:
 
-![Success](/images/5-Workshop/5.3-S3-vpc/bucket-success.png)
+SSH Key Pair
+Public IP
+Bastion Host
+Mở cổng SSH (22)
 
-#### Kết nối với EC2 bằng session manager
+Bắt đầu phiên làm việc
+Tìm kiếm Systems Manager trên AWS Console.
+Chọn Session Manager.
+Chọn Start Session.
+Chọn EC2 Instance chạy Backend của Cloud Office.
 
-+ Trong workshop này, bạn sẽ dùng AWS Session Manager để kết nối đến các EC2 instances. Session Manager là 1 tính năng trong dịch vụ Systems Manager được quản lý hoàn toàn bởi AWS. System manager cho phép bạn quản lý Amazon EC2 instances và các máy ảo on-premises (VMs)thông qua 1 browser-based shell. Session Manager cung cấp khả năng quản lý phiên bản an toàn và có thể kiểm tra mà không cần mở cổng vào, duy trì máy chủ bastion host hoặc quản lý khóa SSH.
+Tạo tài liệu mẫu và tải lên Amazon S3
+* Chuyển về thư mục người dùng
+* Tạo 1 tài liệu mẫu
+* Tải mẫu lên Amazon S3
 
-+ First Cloud AI Journey [Lab](https://000058.awsstudygroup.com/1-introduce/) để hiểu sâu hơn về Session manager.
+Kiểm tra dữ liệu trên Amazon S3
 
-1. Trong AWS Management Console, gõ Systems Manager trong ô tìm kiếm và nhấn Enter:
+Quay lại Amazon S3 Console.
 
-![system manager](/images/5-Workshop/5.3-S3-vpc/sm.png)
+Mở Bucket vừa tạo.
 
-2. Từ **Systems Manager** menu, tìm **Node Management** ở thanh bên trái và chọn **Session Manager**:
+Bạn sẽ thấy tệp xuất hiện trong Bucket.
 
-![system manager](/images/5-Workshop/5.3-S3-vpc/sm1.png)
+Điều này chứng minh rằng Backend Server đã có thể tải tài liệu lên Amazon S3 thông qua Gateway Endpoint.
 
-3. Click Start Session, và chọn EC2 instance tên **Test-Gateway-Endpoint**. 
-{{% notice info %}}
-Phiên bản EC2 này đã chạy trong "VPC cloud" và sẽ được dùng để kiểm tra khả năng kết nối với Amazon S3 thông qua điểm cuối Cổng mà bạn vừa tạo (s3-gwe). {{% /notice %}}
-
-![Start session](/images/5-Workshop/5.3-S3-vpc/start-session.png)
-
-Session Manager sẽ mở browser tab mới với shell prompt: sh-4.2 $
-
-![Success](/images/5-Workshop/5.3-S3-vpc/start-session-success.png)
-
-Bạn đã bắt đầu phiên kết nối đến EC2 trong VPC Cloud thành công. Trong bước tiếp theo, chúng ta sẽ tạo một  S3 bucket và một tệp trong đó.
-#### Create a file and upload to s3 bucket
-
-1. Đổi về ssm-user's thư mục bằng lệnh "cd ~" 
-
-![Change user's dir](/images/5-Workshop/5.3-S3-vpc/cli1.png)
-
-2. Tạo 1 file để kiểm tra bằng lệnh "fallocate -l 1G testfile.xyz", 1 file tên "testfile.xyz" có kích thước 1GB sẽ được tạo.
-
-![Create file](/images/5-Workshop/5.3-S3-vpc/cli-file.png)
-
-3. Tải file mình vừa tạo lên S3 với lệnh "aws s3 cp testfile.xyz s3://your-bucket-name". Thay your-bucket-name bằng tên S3 bạn đã tạo.
-
-![Uploaded](/images/5-Workshop/5.3-S3-vpc/uploaded.png)
-
-Bạn đã tải thành công tệp lên bộ chứa S3 của mình. Bây giờ bạn có thể kết thúc session.
-
-#### Kiểm tra object trong S3 bucket
-
-1. Đi đến S3 console.  
-2. Click tên s3 bucket của bạn
-3. Trong Bucket console, bạn sẽ thấy tệp bạn đã tải lên S3 bucket của mình
-
-![Check S3](/images/5-Workshop/5.3-S3-vpc/check-s3-bucket.png)
-
-#### Tóm tắt
-
-Chúc mừng bạn đã hoàn thành truy cập S3 từ VPC. Trong phần này, bạn đã tạo gateway endpoint cho Amazon S3 và sử dụng AWS CLI để tải file lên. Quá trình tải lên hoạt động vì gateway endpoint cho phép giao tiếp với S3 mà không cần Internet gateway gắn vào "VPC Cloud". Điều này thể hiện chức năng của gateway endpoint như một đường dẫn an toàn đến S3 mà không cần đi qua pub    lic Internet.
