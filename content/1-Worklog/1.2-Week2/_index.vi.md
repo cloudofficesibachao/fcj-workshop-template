@@ -10,50 +10,70 @@ pre: " <b> 1.2. </b> "
 {{% /notice %}}
 
 
-### Mục tiêu tuần 2:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
-
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+BÁO CÁO TUẦN 2 
 
 
-### Kết quả đạt được tuần 2:
+⸻
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+1. Nội dung công việc đã thực hiện
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+Trong tuần 2, em đã tiếp tục tìm hiểu và thực hành các nội dung liên quan đến workshop, tập trung vào việc nâng cao kiến thức nền tảng và áp dụng thực tế.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+Cụ thể:
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Tìm hiểu chi tiết nội dung bài học tuần 2 trên hệ thống workshop
+* Nắm được mục tiêu và yêu cầu của bài học
+* Thực hành theo hướng dẫn (lab/bài tập nếu có)
+* Làm quen với các công cụ và môi trường làm việc
+* Ghi chú lại các kiến thức quan trọng để phục vụ cho các tuần tiếp theo
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+Ngoài ra, em cũng:
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Xem lại kiến thức tuần 1 để liên kết nội dung
+* Tự tìm hiểu thêm tài liệu bên ngoài để hiểu rõ hơn
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+⸻
+
+2. Kết quả đạt được
+
+Sau khi hoàn thành tuần 2, em đã:
+
+* Hiểu rõ hơn về nội dung và quy trình làm việc trong workshop
+* Biết cách áp dụng lý thuyết vào thực hành
+* Làm quen với công cụ/kiến thức mới
+* Hoàn thành các bài tập được giao
+
+Các kỹ năng cải thiện:
+
+* Tư duy logic
+* Khả năng tự học
+* Kỹ năng tìm kiếm tài liệu
+
+⸻
+3. Khó khăn gặp phải
+
+Trong quá trình thực hiện, em gặp một số khó khăn:
+
+* Một số nội dung còn mới nên khó hiểu ban đầu
+* Cần thời gian làm quen với công cụ
+* Khi thực hành có lúc gặp lỗi nhưng chưa biết cách xử lý ngay
+
+⸻
+
+4. Cách giải quyết
+
+* Xem lại tài liệu và video hướng dẫn nhiều lần
+* Tìm kiếm thêm trên Google / tài liệu liên quan
+* Hỏi bạn bè hoặc tham khảo cộng đồng
+* Tự debug và thử nhiều cách khác nhau
+
+⸻
+
+5. Kế hoạch tuần tiếp theo
+
+* Tiếp tục học nội dung tuần 3
+* Ôn lại kiến thức tuần 2 để nắm chắc hơn
+* Hoàn thiện các phần còn chưa hiểu
+* Cải thiện tốc độ làm bài và thực hành
 
 
