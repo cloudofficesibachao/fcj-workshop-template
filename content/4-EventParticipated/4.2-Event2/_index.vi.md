@@ -35,10 +35,10 @@ pre: " <b> 4.2. </b> "
 - Học được nhiều kinh nghiệm và kiến thức về Cloud, Agentic Al, đồng thời nâng cao kĩ năng làm việc nhóm và giải quyết vấn đề.
 
 10:30 - 11:00 | Solution Architect Professional Native App
-- Giới thiệu ý tưởng SA Professional AI Native App nhằm hỗ trợ Solution Architect tự động hóa quá trình thiết kế giải pháp trên AWS. SA_Professional_Native_App.pptx
+- Giới thiệu ý tưởng SA Professional AI Native App nhằm hỗ trợ Solution Architect tự động hóa quá trình thiết kế giải pháp trên AWS. 
 - Phân tích các khó khăn trong quy trình hiện tại như thu thập yêu cầu, thiết kế kiến trúc, tạo sơ đồ và ước tính chi phí thủ công. SA_Professional_Native_App.pptx
-- Trình bày quy trình hoạt động (Workflow) và kiến trúc tổng thể (Architecture) của ứng dụng AI Native App. SA_Professional_Native_App.pptx
-- Giới thiệu các lợi ích đạt được sau khi áp dụng AI Native App như rút ngắn thời gian phân tích yêu cầu, tự động tạo IaC và hỗ trợ ước tính chi phí AWS. SA_Professional_Native_App.pptx
+- Trình bày quy trình hoạt động (Workflow) và kiến trúc tổng thể (Architecture) của ứng dụng AI Native App. 
+- Giới thiệu các lợi ích đạt được sau khi áp dụng AI Native App như rút ngắn thời gian phân tích yêu cầu, tự động tạo IaC và hỗ trợ ước tính chi phí AWS. 
 - Thực hiện phần demo để minh họa cách ứng dụng hỗ trợ xây dựng kiến trúc và tương tác với người dùng trong thực tế.
 
 11:00 - 11:30 | Signal Scout
