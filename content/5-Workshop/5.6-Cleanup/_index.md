@@ -8,6 +8,7 @@ Pre: "<b>5.6.</b>"
 
 
 Checking Set-Up Resources
+
 Before the workshop ends, check the CloudFormation stack, API Gateway, Lambda, DynamoDB, Cognito, S3, CloudFront, EventBridge, CloudWatch, and SNS. Record the stack output and test results.
 
 Cleaning Up the Learning Environment
