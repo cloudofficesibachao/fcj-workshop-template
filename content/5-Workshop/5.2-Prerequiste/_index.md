@@ -6,66 +6,38 @@ chapter: false
 pre: "<b>5.2.</b>"
 ---
 
-### IAM Permissions
+Setting up your AWS account and environment
+1. Select a Region
+Log in to the AWS Management Console and select the Asia Pacific (Singapore) Region – ap-southeast-1. Use this Region consistently for CloudFormation, Lambda, DynamoDB, Cognito, S3, and CloudWatch.
 
-Attach the following IAM Policy to your AWS account to prepare permissions for creating resources for the Cloud Office system:
+2. Set up account security
+Enable MFA for the root user and do not use the root user for daily tasks.
+Create an IAM user or IAM Identity Center user for deployment purposes.
+Grant only necessary permissions to CloudFormation, Lambda, API Gateway, DynamoDB, S3, Cognito, IAM, CloudWatch, EventBridge, and SNS.
+Do not store access keys in source code or upload them to Git.
 
-```json
-{
+3. Set up cost management
+Open Billing and Cost Management to check the Free Tier and invoices.
+Create an AWS Budget with appropriate thresholds for the learning environment.
+Configure email alerts when actual or projected costs exceed the thresholds.
+4. Install the tools
+Install Node.js 22.x, npm, AWS CLI v2, AWS SAM CLI, and Docker Desktop, then check:
 
-"Version": "2012-10-17",
+node --version
+npm --version
+aws --version
+sam --version
+docker --version
+5. Configure AWS CLI
+aws configure
+aws sts get-caller-identity
+aws configure get region
+The get-caller-identity result must match the expected AWS Account, and the default Region should be ap-southeast-1.
 
-"Statement": [
-
-{
-"Sid": "CloudOfficePermissions",
-
-"Effect": "Allow",
-
-"Action": [
-"cloudformation:*",
-
-"s3:*",
-
-"rds:*",
-
-"cognito-idp:*",
-
-"ec2:*",
-
-"iam:PassRole",
-
-"iam:CreateRole"
-
-],
-
-"Resource": "*"
-
-}
-]
-}
-
-#### Initialize resources using CloudFormation
-Introduction
-
-AWS CloudFormation is a service that allows infrastructure deployment as code (IaC). Instead of manually creating each resource on the AWS Console, users only need to prepare a YAML or JSON file describing the infrastructure. CloudFormation will automatically create and configure the resources according to the definition.
-
-In the Cloud Office workshop, CloudFormation is used to quickly create infrastructure components such as:
-
-Virtual Private Cloud (VPC)
-Public Subnet
-Internet Gateway
-Route Table
-Security Group
-Amazon EC2 Instance
-IAM Instance Profile (if needed)
-
-Using CloudFormation offers many benefits such as:
-
-Fast and consistent infrastructure deployment.
-
-Easily reusable across multiple environments (Development, Testing, Production).
-
-Reduced errors compared to manual configuration.
+6. Prepare the source code
+npm install
+npm run frontend:install
+npm run backend:install
+Do not proceed with deployment if the AWS Account or Region is incorrect. Docker must run before building Lambda with the sharp library.
 
 Easy to update or delete the entire infrastructure via the Stack.
