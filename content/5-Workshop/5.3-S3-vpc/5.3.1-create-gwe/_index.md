@@ -1,38 +1,42 @@
 ---
-title : "Create a gateway endpoint"
-date : 2024-01-01 
+title : "Create CloudFormation stack"
+date : 2024-01-01
 weight : 1
 chapter : false
 pre : " <b> 5.3.1 </b> "
 ---
 
+Test the template and create the backend stack
+1. Check the source code
+cd backend
+node --check functions\business-logic\app.mjs
+node --check functions\image-processor\index.mjs
+node --check functions\contract-expiry-notifier\index.mjs
+npm test
+2. Check the AWS SAM template
+sam validate ` 
+--template-file infra\template.yaml ` 
+--lint ` 
+--region ap-southeast-1
+3. Build Lambda for AWS
+sam build ` 
+--use-container ` 
+--config-file samconfig.toml ` 
+--no-cached
+4. Create CloudFormation stack
+sam deploy ` 
+--config-file samconfig.toml `
+--template-file .aws-sam\build\template.yaml `
 
+--parameter-overrides `
+ProjectName=cloffice `
+AlertEmail=YOUR_REAL_EMAIL `
+CorsAllowOrigin="http://localhost:5173" `
+EnablePointInTimeRecovery=false `
+EnableCloudFront=false
+Check the change set before confirming. CloudFormation will create resources and rollback if the setup fails.
 
-Instructions:
+5. Check the status
+In the AWS Console, open CloudFormation → Stacks → cloffice-backend. The stack should change to CREATE_COMPLETE or UPDATE_COMPLETE.
 
-Log in to the AWS Management Console.
-Search for and open the Amazon VPC service.
-
-In the left-hand navigation bar, select Endpoints, then click Create endpoint.
-
-Configure the Endpoint
-
-In the Create endpoint screen, configure as follows:
-
-Name tag: cloud-office-s3-endpoint
-Service category: AWS services
-
-Select VPC
-This VPC contains all the resources of the Cloud Office system, such as:
-
-Backend Server (EC2)
-Database Server
-Private Subnet
-Public Subnet
-
-After successfully creating the S3 Gateway Endpoint:
-
-The Cloud Office Backend Server can upload and download documents from Amazon S3.
-Traffic between EC2 and S3 does not go through the public internet.
-Reduces the cost of using NAT Gateway when handling many contracts and documents.
-Enhances the security of the system's data.
+Enhance system data security.
