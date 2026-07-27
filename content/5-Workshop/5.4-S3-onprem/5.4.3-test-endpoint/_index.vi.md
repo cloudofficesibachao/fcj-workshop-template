@@ -1,31 +1,29 @@
 ---
-title : "Kiểm tra Interface Endpoint"
+title : "Thiết lập CloudFront và CORS"
 date : 2024-01-01
 weight : 3
 chapter : false
 pre : " <b> 5.4.3 </b> "
 ---
 
-Sau khi Endpoint có trạng thái Available, tiến hành kiểm tra.
+Thiết lập phân phối frontend bằng CloudFront
+1. Bật CloudFront
+Sau khi tài khoản được AWS phê duyệt, build và deploy lại stack với EnableCloudFront=true. CloudFormation sẽ tạo distribution, Origin Access Control và bucket policy cho frontend.
 
-Mở
+2. Lấy thông tin distribution
+Lấy CloudFrontUrl và CloudFrontDistributionId từ stack output. Chờ distribution chuyển sang trạng thái Deployed.
 
-AWS Systems Manager
+3. Xóa cache sau khi cập nhật frontend
+aws cloudfront create-invalidation `
+  --distribution-id YOUR_DISTRIBUTION_ID `
+  --paths "/*"
+4. Siết CORS
+Deploy lại backend với CorsAllowOrigin bằng đúng https://...cloudfront.net, không dùng * trong production.
 
-↓
-
-Session Manager
-
-↓
-
-Kết nối tới
-
-CloudOffice-Backend
-
-Sau khi đăng nhập thành công, chạy lệnh
-
-aws ssm describe-instance-information
-
-Nếu lệnh trả về thông tin của EC2, chứng tỏ Backend Server đã truy cập thành công dịch vụ AWS thông qua Interface Endpoint.
+5. Kiểm tra
+Website tải qua HTTPS.
+Refresh trực tiếp các route React không trả 403/404.
+API request không bị lỗi CORS.
+S3 bucket vẫn private và chỉ CloudFront đọc được object.
 
 
