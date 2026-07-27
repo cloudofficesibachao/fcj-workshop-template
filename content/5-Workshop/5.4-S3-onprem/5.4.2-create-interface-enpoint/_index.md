@@ -1,74 +1,32 @@
 ---
-title : "Create an S3 Interface endpoint"
-date : 2024-01-01
-weight : 2
-chapter : false
-pre : " <b> 5.4.2 </b> "
+Title: "Setting up the S3 frontend bucket"
+Date: 2024-01-01
+Weight: 2
+Chapter: False
+Prefix: "<b>5.4.2</b>"
 ---
 
-Objective
+Build and deploy the frontend to Amazon S3
+1. Production Configuration
+Create frontend/.env.production.local with the current API URL and Cognito ID.
 
-In this section, we will create an Interface Endpoint for the AWS services that Cloud Office uses.
+2. Build the application
+npm run frontend:build
+3. Upload to S3
+Compare the bucket with the output FrontendBucketName, then run:
 
-Execution
+aws s3 sync frontend\dist `
 
-Open Amazon VPC
+s3://YOUR_FRONTEND_BUCKET `
+--delete `
 
-Select
+--region ap-southeast-1
+4. Check bucket configuration
+Block Public Access is enabled.
+Server-side encryption uses AES-256.
 
-Endpoints
-
-Select
-
-Create endpoint
-
-Name
-
-Name
-
-cloud-office-ssm-endpoint
-Service Category
-
-Select
-
-AWS services
-Services
-
-Find
-
-Systems Manager
-
-or
-
-ssm
-
-Select the service
-
-com.amazonaws.<region>.ssm
-
-Interface
-
-VPC
-
-Select
-
-CloudOffice-VPC
-Subnets
-
-Select the Private Subnet containing the Backend Server.
-
-Select the Security Group of the Interface Endpoint.
-
-The Security Group needs to allow HTTPS (443) from the Backend Server.
-
-Private DNS
-
-Check
-
-Enable DNS name
-
-This allows the Backend Server to access the AWS service using the default domain name without changing the application.
-
-Press
+Do not create a public bucket policy.
+CloudFront Origin Access Control will be the component reading the production object.
+--delete removes the object that is no longer in the build directory. Only run this after confirming the frontend bucket is correct.
 
 Create endpoint
