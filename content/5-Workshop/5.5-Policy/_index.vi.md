@@ -1,64 +1,31 @@
 ---
-title : "VPC Endpoint Policies"
+title : "Thiết lập bảo mật, giám sát và cảnh báo"
 date : 2024-01-01
 weight : 5
 chapter : false
 pre : " <b> 5.5 </b> "
 ---
 
-Nội dung thực hành
-Mở S3 Gateway Endpoint.
-Chỉnh sửa Endpoint Policy.
-Áp dụng chính sách giới hạn truy cập.
-Kiểm tra kết quả.
-
-Cấu hình Endpoint Policy
-
-Mở Amazon VPC → Endpoints.
-
-Chọn Endpoint:
-
-cloud-office-s3-endpoint
-
-Chọn tab Policy.
-
-Thay đổi từ Full Access sang Custom.
-
-Sử dụng Policy sau (thay cloud-office-documents bằng tên Bucket của bạn):
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "AllowCloudOfficeBucketOnly",
-      "Effect": "Allow",
-      "Principal": "*",
-      "Action": [
-        "s3:GetObject",
-        "s3:PutObject",
-        "s3:DeleteObject",
-        "s3:ListBucket"
-      ],
-      "Resource": [
-        "arn:aws:s3:::cloud-office-documents",
-        "arn:aws:s3:::cloud-office-documents/*"
-      ]
-    }
-  ]
-}
-
-
-Kiểm tra
-
-Kết nối đến Backend Server bằng AWS Session Manager.
-
-Thử tải một tệp lên Bucket của Cloud Office:
-
-aws s3 cp office-contract-demo.pdf s3://cloud-office-documents
-
-Lệnh sẽ thực hiện thành công nếu Bucket nằm trong Policy.
-
-Tiếp theo, thử tải tệp lên một Bucket khác:
-
-aws s3 cp office-contract-demo.pdf s3://another-bucket
-
-AWS CLI sẽ trả về thông báo Access Denied, cho thấy Endpoint Policy đã hoạt động đúng và chỉ cho phép truy cập Bucket của Cloud Office.
+Thiết lập bảo mật, giám sát và cảnh báo
+Hoàn thiện thiết lập bảo mật và giám sát
+IAM và Cognito
+Dùng IAM Role cho Lambda thay vì access key.
+Giới hạn quyền Lambda đến đúng DynamoDB table, S3 bucket và SNS topic cần sử dụng.
+Dùng Cognito JWT Authorizer cho API riêng tư.
+Kiểm tra group admin tại backend trước khi thực hiện nghiệp vụ quản trị.
+S3 và CloudFront
+Bật mã hóa và Block Public Access cho cả ba bucket.
+Upload bằng presigned URL có thời hạn ngắn.
+Dùng CloudFront OAC thay cho public website bucket.
+Có thể gắn AWS WAF vào CloudFront nếu ngân sách cho phép.
+CloudWatch, SNS
+Log Group của Lambda lưu log 14 ngày.
+CloudWatch Alarm cảnh báo khi Business Logic Lambda phát sinh lỗi.
+SNS gửi email cho người phụ trách vận hành.
+Checklist
+ CORS chỉ cho phép CloudFront URL.
+ SNS subscription đã xác nhận.
+ S3 không public.
+ User thường không truy cập được admin API.
+ CloudWatch nhận log và metric.
+ AWS Budget đã bật cảnh báo chi phí.
