@@ -5,122 +5,71 @@ weight: 1
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
-
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Agentic AI Build Week Report
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Introduce and promote Agentic AI
+- Create a platform for participation in the Hackathon
+- Encourage participation from all audiences
+- Develop practical skills
 
-### Speakers
+- Connect the AI ​​and AWS communities
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+### Speaker List
 
-### Key Highlights
+- ""Hackathon Journey"" + An Khuong, Quoc Huy, Quang Khoi, Thanh Duc, Phuoc Loc, Truong Hung
+- ""Solution Architect Professional Native App"" + Thuan Phat, Hoang Long, Minh Nghia, Dai Vi, Nguyen An
+- ""Signal Scout"" + Tan Luc, Hoang Hieu, Duy Khiem, Cong Minh, Minh Quan
+- ""AI - Powered Conversation Ordering" + Anh Duy, Tran Dong, Doan Trung, Minh Viet, Anshul Roy
+### Program Content:
+09:15 - 09:45 | AI - Powered Conversation Ordering
+- Challenges in developing an AI system capable of understanding natural language, accurately processing order requests, applying business rules, and confirming orders to minimize errors.
 
-#### Identifying the drawbacks of legacy application architecture
+- Presentation of the AI ​​Agent architecture, the process of handling and receiving requests until order completion.
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- Results of practical implementation, cost-effectiveness, system performance, and a demo of the KFC Bot Agent product.
 
-#### Transitioning to modern application architecture – Microservices
+09:50 - 10:30 | Hackathon Journey
+- Participate in the Hackathon to challenge yourself.
+- Build the S.H.E.P.H.E.R.D project, applying AI to monitor crowd density, predict congestion, and assist in coordination.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- The implementation process encountered many difficulties such as lack of AI experience and time pressure.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+- Gained valuable experience and knowledge about Cloud and Agentic systems. AI, while also enhancing teamwork and problem-solving skills.
 
-#### Domain-Driven Design (DDD)
+10:30 - 11:00 | Solution Architect Professional Native App
+- Introduction of the SA Professional AI Native App concept to support Solution Architects in automating the solution design process on AWS.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+- Analysis of current process challenges such as requirements gathering, architectural design, diagram creation, and manual cost estimation. SA_Professional_Native_App.pptx
+- Presentation of the workflow and overall architecture of the AI ​​Native App.
 
-#### Event-Driven Architecture
+- Introduction of benefits achieved after implementing the AI ​​Native App, such as reduced requirements analysis time, automatic IaC generation, and support for AWS cost estimation.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+- Demonstration to illustrate how the application supports architecture building and user interaction in practice.
 
-#### Compute Evolution
+11:00 - 11:30 | Signal Scout
+- Businesses face difficulties in managing multiple Services, service discovery, system observability, infrastructure expansion, and CI/CD deployment. SignalScout.pptx
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+- Building an AI platform to help detect strategic changes in businesses early, analyze data, connect disparate signals, and support evidence-based decision-making. SignalScout.pptx
 
-#### Amazon Q Developer
+- The system uses AWS services in combination with LangFuse, TinyFish, Apify, and the SignalScout web platform to collect data, analyze, and display results via a dashboard. SignalScout.pptx
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+- Presenting the operating costs of AWS and third-party services, and proposing a more optimized architecture to reduce deployment costs. SignalScout.pptx
 
-### Key Takeaways
+- Demonstrating the product, sharing experiences, lessons learned, and future project development directions. SignalScout.pptx
 
-#### Design Mindset
+#### Some images from the event
+<img width="1920"> height="2560" alt="z8084265118414_f6dd34170e7bb1b3fbb6a67d2f8b2375" src="https://github.com/user-attachments/assets/a581ccc4-d70d-4000-8c86-46e649e4c0d8" />
+<img width="1920" height="2560" alt="z8084265120024_5848f896afba7047fa3c6ae59ab63dc8" src="https://github.com/user-attachments/assets/f44a5f2e-7da7-4e73-89bf-1c8897ff6884" />
+<img width="1920" height="2560" alt="z8084265122824_58352a8aa46d259df4908a87b5f17462" src="https://github.com/user-attachments/assets/e2a4602f-4cef-46be-99c3-308f5f40357b" />
+<img width="1920" height="2560" alt="z8084265141340_d33860c5b939cac2af44f1a1d436be55" src="https://github.com/user-attachments/assets/85be4182-7562-48cf-b2cd-dd143270323d" />
+<img width="1920" height="2560" alt="z8084265141527_3851eac7b3bd7e72c60073eaa3702537" src="https://github.com/user-attachments/assets/cc686121-9a90-4ee3-90b4-8a8b2858a14d" />
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+### Knowledge and Experience Gained
 
-#### Technical Architecture
+Through the sharing sessions, I gained a better understanding of the process of developing an AI product from idea to practical implementation. I learned how to build Agentic AI systems, apply Generative AI, design Microservices architecture on AWS, optimize infrastructure costs, and develop multi-channel AI solutions. Besides technical knowledge, I also learned about participating in Hackathons, such as teamwork, task allocation, time management, building MVPs, and presentation and product pitching skills. Before the evaluation panel.
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+### Application to Work
 
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
-
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
-
-### Event Experience
-
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
-
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
-
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+The knowledge gained can be applied to the workshop project and personal projects, especially in designing system architecture on AWS, building AI applications, developing chatbots/AI agents, optimizing deployment processes, and evaluating costs.
