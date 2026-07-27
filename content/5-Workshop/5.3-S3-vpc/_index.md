@@ -1,57 +1,22 @@
 ---
-title : "Access S3 from VPC"
+title : "Setting up AWS backend infrastructure"
 date : 2024-01-01
 weight : 3
 chapter : false
 pre : " <b> 5.3. </b> "
 ---
 
-1. Introduction to S3 Gateway Endpoint
 
-The Amazon S3 Gateway Endpoint is a type of VPC Endpoint that allows resources within an Amazon VPC to directly access Amazon S3 services via the AWS internal network. Unlike accessing S3 via an Internet Gateway or NAT Gateway, the Gateway Endpoint uses the VPC's Route Table to route traffic to S3, preventing data from passing through the public internet.
+Setting up AWS backend infrastructure
+The CloudOffice infrastructure is declared in the AWS SAM template and created synchronously by CloudFormation. The stack includes API Gateway, Lambda, DynamoDB, Cognito, S3, EventBridge, CloudWatch, and SNS.
 
-2. Cloud Office System Context
+Contents
+Checking the template and creating the CloudFormation stack
+Checking resources and initial data configuration
+In the initial setup, it is recommended to leave EnableCloudFront=false and EnablePointInTimeRecovery=false. These two options can be enabled after the backend is stable and the budget has been reviewed.
+The CloudOffice infrastructure is declared in the AWS SAM template and created synchronously by CloudFormation. The stack includes API Gateway, Lambda, DynamoDB, Cognito, S3, EventBridge, CloudWatch, and SNS.
 
-In a Cloud Office system, users frequently upload and download various types of documents such as office lease agreements, office images, invoices, and customer verification documents. These documents are stored on Amazon S3 to ensure scalability and data durability.
-
-The system's backend is deployed on Amazon EC2 in a Private Subnet to enhance security. Without configuring an S3 Gateway Endpoint, S3 access requests would have to go through a NAT Gateway or Internet Gateway. This both increases data transmission costs and creates an unnecessary internet connection point.
-
-3. Architecture before and after configuration
-
-Before creating the Gateway Endpoint
-
-EC2 Backend
-
-│
-
-▼
-NAT Gateway
-
-│
-
-▼
-Internet
-
-│
-
-▼
-Amazon S3
-
-After creating the Gateway Endpoint
-
-EC2 Backend
-
-│
-
-▼
-Route Table
-
-│
-
-▼
-S3 Gateway Endpoint
-
-│
-
-▼
-Amazon S3
+Contents
+Checking the template and creating the CloudFormation stack
+Checking resources and initial data configuration
+In the initial setup, it is recommended to leave EnableCloudFront=false and EnablePointInTimeRecovery=false. These two options can be enabled after the backend is stable and the budget has been reviewed.
