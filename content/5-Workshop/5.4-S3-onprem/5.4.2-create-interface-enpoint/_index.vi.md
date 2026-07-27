@@ -1,76 +1,30 @@
 ---
-title : "Tạo một S3 Interface endpoint"
+title : "Thiết lập frontend bucket S3"
 date : 2024-01-01
 weight : 2
 chapter : false
 pre : " <b> 5.4.2 </b> "
 ---
 
-Mục tiêu
+Build và đưa frontend lên Amazon S3
+1. Cấu hình production
+Tạo frontend/.env.production.local với API URL và Cognito ID hiện tại.
 
-Trong phần này, chúng ta sẽ tạo Interface Endpoint cho các dịch vụ AWS mà Cloud Office sử dụng.
+2. Build ứng dụng
+npm run frontend:build
+3. Upload lên S3
+Đối chiếu bucket với output FrontendBucketName, sau đó chạy:
 
-Thực hiện
+aws s3 sync frontend\dist `
+  s3://YOUR_FRONTEND_BUCKET `
+  --delete `
+  --region ap-southeast-1
+4. Kiểm tra cấu hình bucket
+Block Public Access đang bật.
+Server-side encryption dùng AES-256.
+Không tạo public bucket policy.
+CloudFront Origin Access Control sẽ là thành phần đọc object production.
+--delete xóa object không còn trong thư mục build. Chỉ chạy sau khi đã xác nhận chính xác frontend bucket.
 
-Mở Amazon VPC
-
-Chọn
-
-Endpoints
-
-Chọn
-
-Create endpoint
-
-Name
-
-Đặt tên
-
-cloud-office-ssm-endpoint
-Service Category
-
-Chọn
-
-AWS services
-Services
-
-Tìm
-
-Systems Manager
-
-hoặc
-
-ssm
-
-Chọn dịch vụ
-
-com.amazonaws.<region>.ssm
-
-Interface
-
-VPC
-
-Chọn
-
-CloudOffice-VPC
-Subnets
-
-Chọn Private Subnet chứa Backend Server.
-
-Security Group
-
-Chọn Security Group của Interface Endpoint.
-
-Security Group cần cho phép HTTPS (443) từ Backend Server.
-
-Private DNS
-
-Đánh dấu
-
-Enable DNS name
-
-Điều này giúp Backend Server có thể truy cập dịch vụ AWS bằng tên miền mặc định mà không cần thay đổi ứng dụng.
-
-Nhấn
 
 Create endpoint
