@@ -1,34 +1,40 @@
 ---
-title : "Tạo một Gateway Endpoint"
+title : "Tạo CloudFormation stack"
 date : 2024-01-01 
 weight : 1
 chapter : false
 pre : " <b> 5.3.1 </b> "
 ---
 
-Thực hiện
-Đăng nhập AWS Management Console.
-Tìm kiếm và mở dịch vụ Amazon VPC.
-Trong thanh điều hướng bên trái, chọn Endpoints, sau đó nhấn Create endpoint.
+Kiểm tra template và tạo stack backend
+1. Kiểm tra mã nguồn
+cd backend
+node --check functions\business-logic\app.mjs
+node --check functions\image-processor\index.mjs
+node --check functions\contract-expiry-notifier\index.mjs
+npm test
+2. Kiểm tra AWS SAM template
+sam validate `
+  --template-file infra\template.yaml `
+  --lint `
+  --region ap-southeast-1
+3. Build Lambda cho AWS
+sam build `
+  --use-container `
+  --config-file samconfig.toml `
+  --no-cached
+4. Tạo CloudFormation stack
+sam deploy `
+  --config-file samconfig.toml `
+  --template-file .aws-sam\build\template.yaml `
+  --parameter-overrides `
+    ProjectName=cloffice `
+    AlertEmail=YOUR_REAL_EMAIL `
+    CorsAllowOrigin="http://localhost:5173" `
+    EnablePointInTimeRecovery=false `
+    EnableCloudFront=false
+Xem change set trước khi xác nhận. CloudFormation sẽ tạo tài nguyên và rollback nếu quá trình thiết lập thất bại.
 
-Cấu hình Endpoint
-
-Trong màn hình Create endpoint, cấu hình như sau:
-
-Name tag cloud-office-s3-endpoint
-Service category AWS services
-
-Chọn VPC
-Đây là VPC chứa toàn bộ tài nguyên của hệ thống Cloud Office như:
-
-Backend Server (EC2)
-Database Server
-Private Subnet
-Public Subnet
-
-Sau khi tạo thành công S3 Gateway Endpoint:
-
-Backend Server của Cloud Office có thể upload và download tài liệu từ Amazon S3.
-Lưu lượng truyền giữa EC2 và S3 không đi qua Internet công cộng.
-Giảm chi phí sử dụng NAT Gateway khi xử lý nhiều hợp đồng và tài liệu.
+5. Kiểm tra trạng thái
+Trong AWS Console, mở CloudFormation → Stacks → cloffice-backend. Stack phải chuyển sang CREATE_COMPLETE hoặc UPDATE_COMPLETE.iệu.
 Tăng cường bảo mật cho dữ liệu của hệ thống.
