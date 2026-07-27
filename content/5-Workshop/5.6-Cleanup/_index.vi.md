@@ -6,8 +6,9 @@ chapter : false
 pre : " <b> 5.6. </b> "
 ---
 
-Kiểm tra và dọn dẹp tài nguyên AWS
+
 Kiểm tra tài nguyên đã thiết lập
+
 Trước khi kết thúc workshop, kiểm tra CloudFormation stack, API Gateway, Lambda, DynamoDB, Cognito, S3, CloudFront, EventBridge, CloudWatch và SNS. Ghi lại stack output và kết quả kiểm thử.
 
 Dọn dẹp môi trường học tập
