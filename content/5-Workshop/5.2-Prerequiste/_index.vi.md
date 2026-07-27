@@ -7,49 +7,36 @@ pre : " <b> 5.2. </b> "
 ---
 
 
-### IAM Permissions
+Thiết lập tài khoản và môi trường AWS
+1. Chọn Region
+Đăng nhập AWS Management Console và chọn Region Asia Pacific (Singapore) – ap-southeast-1. Sử dụng thống nhất Region này cho CloudFormation, Lambda, DynamoDB, Cognito, S3 và CloudWatch.
 
-Gắn IAM Policy sau vào tài khoản AWS của bạn để chuẩn bị quyền tạo tài nguyên cho hệ thống Cloud Office:
+2. Thiết lập bảo mật tài khoản
+Bật MFA cho root user và không sử dụng root user cho công việc hằng ngày.
+Tạo IAM user hoặc IAM Identity Center user dành cho việc triển khai.
+Chỉ cấp quyền cần thiết cho CloudFormation, Lambda, API Gateway, DynamoDB, S3, Cognito, IAM, CloudWatch, EventBridge và SNS.
+Không lưu access key trong source code hoặc đưa lên Git.
+3. Thiết lập quản lý chi phí
+Mở Billing and Cost Management để kiểm tra Free Tier và hóa đơn.
+Tạo AWS Budget với ngưỡng phù hợp cho môi trường học tập.
+Cấu hình email nhận cảnh báo khi chi phí thực tế hoặc dự báo vượt ngưỡng.
+4. Cài đặt công cụ
+Cài Node.js 22.x, npm, AWS CLI v2, AWS SAM CLI và Docker Desktop, sau đó kiểm tra:
 
-```json
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "CloudOfficePermissions",
-            "Effect": "Allow",
-            "Action": [
-                "cloudformation:*",
-                "s3:*",
-                "rds:*",
-                "cognito-idp:*",
-                "ec2:*",
-                "iam:PassRole",
-                "iam:CreateRole"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
+node --version
+npm --version
+aws --version
+sam --version
+docker --version
+5. Cấu hình AWS CLI
+aws configure
+aws sts get-caller-identity
+aws configure get region
+Kết quả get-caller-identity phải đúng AWS Account dự kiến và Region mặc định nên là ap-southeast-1.
 
-#### Khởi tạo tài nguyên bằng CloudFormation
-Giới thiệu
-
-AWS CloudFormation là dịch vụ cho phép triển khai hạ tầng dưới dạng mã (Infrastructure as Code - IaC). Thay vì tạo từng tài nguyên thủ công trên AWS Console, người dùng chỉ cần chuẩn bị một tệp YAML hoặc JSON mô tả hạ tầng. CloudFormation sẽ tự động tạo và cấu hình các tài nguyên theo đúng định nghĩa.
-
-Trong workshop Cloud Office, CloudFormation được sử dụng để tạo nhanh các thành phần hạ tầng như:
-
-Virtual Private Cloud (VPC)
-Public Subnet
-Internet Gateway
-Route Table
-Security Group
-Amazon EC2 Instance
-IAM Instance Profile (nếu cần)
-
-Việc sử dụng CloudFormation mang lại nhiều lợi ích như:
-
-Triển khai hạ tầng nhanh chóng và nhất quán.
-Dễ dàng tái sử dụng cho nhiều môi trường (Development, Testing, Production).
-Giảm sai sót khi cấu hình thủ công.
+6. Chuẩn bị mã nguồn
+npm install
+npm run frontend:install
+npm run backend:install
+Không tiếp tục triển khai nếu AWS Account hoặc Region chưa đúng. Docker phải chạy trước khi build Lambda có thư viện sharp.
 Dễ dàng cập nhật hoặc xóa toàn bộ hạ tầng thông qua Stack.
